@@ -18,14 +18,18 @@ function App() {
             <Typography variant='h1'>Olá, Douglas!</Typography>
             <Typography>Veja como estão as suas finanças hoje!</Typography>
           </div>
-          <section>
+          <section className='grid grid-cols-2 items-stretch gap-6'>
             <Card>
               <Card.Header>Orçamento diário disponível:</Card.Header>
-              <Card.Body><DailyBudget value={42} /></Card.Body>
+              <Card.Body>
+                <DailyBudget value={42} />
+              </Card.Body>
             </Card>
             <Card>
               <Card.Header>Progresso da meta financeira</Card.Header>
-              <Card.Body><SavingsStatus /></Card.Body>
+              <Card.Body>
+                <SavingsStatus />
+              </Card.Body>
             </Card>
             <Card>
               <Card.Header>Movimentação financeira</Card.Header>
