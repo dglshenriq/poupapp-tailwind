@@ -1,5 +1,12 @@
+import { Aside } from "./Aside";
+
+
 function App() {
-  return <div className='bg-black min-h-screen'> </div>;
+  return (
+    <div className='bg-neutral-background min-h-screen'>
+      <Aside />
+    </div>
+  );
 }
 
 export default App;
